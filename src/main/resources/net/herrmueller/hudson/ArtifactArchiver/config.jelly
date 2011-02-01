@@ -1,0 +1,16 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:entry title="Files to archive" field="artifacts">
+    <f:textbox />
+  </f:entry>
+  <f:advanced>
+    <f:entry title="Excludes" field="excludes">
+      <f:textbox />
+    </f:entry>
+    <f:entry title="Discard all but the last successful/stable artifact to save disk space" field="latestOnly">
+      <f:checkbox />
+    </f:entry>
+    <f:entry title="Do not fail the build if no artifacts are present" field="allowEmptyArchive">
+      <f:checkbox />
+    </f:entry>
+  </f:advanced>
+</j:jelly>
