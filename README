@@ -1,0 +1,1 @@
+A hudson plug-in which provides an alternative artifact archiver that can be configured not to fail the project if no artifacts are found.
